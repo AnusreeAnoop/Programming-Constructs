@@ -1,17 +1,17 @@
 #!/bin/bash
 
 #read the number to find its factors
-read -p "Enter a number" N
+read -p "Enter a number" num
 
 #find factors starting from 2
-for (( count=2;count<N;count++ ))
+for (( count=2;count<num;count++ ))
 do
 
-        if [[ $(( $N%$count )) -eq 0 ]]
+        if [[ $(( $num%$count )) -eq 0 ]]
         then
 		#store the factors in array
 		array[count++]=$count
-                N=$(( $N/$count ))
+                num=$(( $num/$count ))
         fi
 done
 
