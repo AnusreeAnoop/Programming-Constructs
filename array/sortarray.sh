@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#declare
+#variable
 count=0
 
 #generate 10 random variables and store in array
@@ -16,7 +16,7 @@ echo ${Number[@]}
 #sort the values inside array
 for (( i=0;i<10;i++ ))
 do
-	for (( j=$i;j<=10;j++ ))
+	for (( j=$i+1;j<=10;j++ ))
 	do
 		if [[ ${Number[$i]} -gt ${Number[$j]} ]]
 		then
