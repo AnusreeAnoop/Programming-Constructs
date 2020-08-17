@@ -14,7 +14,6 @@ done
 echo "array= "${array[@]}
 
 #check if sum of any 3 numbers in array gives zero
-
 #take a number from array
 for (( i=0;i<$size-2;i++))
 do
