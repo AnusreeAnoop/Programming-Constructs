@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash -x
 
 #declare variable
 count=0
@@ -8,7 +8,7 @@ while [[ count -lt 10 ]]
 do
 	#store it in array
 	Number[ $count ]=$(( RANDOM%900+100))
-(( count++ ))
+	(( count++ ))
 done
 
 #print the array elements
@@ -17,6 +17,7 @@ echo ${Number[@]}
 #declare variables
 big=99
 small=1000
+
 
 #check for 2nd largest and 2nd smallest element in array
 for value in `echo ${Number[@]}`
