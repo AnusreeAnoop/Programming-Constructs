@@ -13,4 +13,4 @@ do
 done
 
 #print the array containing numbers which are repeated twice
-echo ${array[@]}
+echo "Numbers who have repeated digits=" ${array[@]}
