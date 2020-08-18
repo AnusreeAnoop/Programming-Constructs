@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 #variable declaration
 max=0
