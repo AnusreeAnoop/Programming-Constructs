@@ -4,7 +4,7 @@
 read -p "Enter a number" num
 
 #print week day which the number represents
-case $num in 
+case $num in
 	1)echo "Sunday" ;;
 	2)echo "Monday" ;;
 	3)echo "Tuesday";;
