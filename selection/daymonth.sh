@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 #read date and month from user
 read -p "Enter date" date
