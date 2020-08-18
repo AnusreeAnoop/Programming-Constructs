@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash
 
 #read number and store it
 read -p "Enter a single digit number" num
@@ -34,6 +34,7 @@ then
 elif [[ $num -eq 9 ]]
 then
 	echo "Nine"
+
 #if number is not single digit
 else
 	echo "Invalid number"
