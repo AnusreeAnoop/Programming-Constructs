@@ -5,7 +5,7 @@ read -p "Enter a number" num
 
 #display the place value
 case $num in
-	1)echo "Units" ;;
+	1)echo "Units";;
 	10)echo "Tens";;
 	100)echo "Hundreds";;
 	1000)echo "Thousands";;
