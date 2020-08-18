@@ -11,6 +11,7 @@ feet=`echo $inch/12 | awk -F/ '{print $1/$2}'`
 
 echo $inch "inch is equall to "$feet" ft."
 
+
 #Rectngular plot variable in feet
 length=60
 breadth=40
