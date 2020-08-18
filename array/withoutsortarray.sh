@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 #declare variable
 count=0
@@ -26,11 +26,21 @@ do
 	then
 		sec_big=$big
 		big=$value
+	else
+		if [[ $value -gt $sec_big ]]
+		then
+			sec_big=$value
+		fi
 	fi
 	if [[ $value -lt $small ]]
 	then
 		sec_small=$small
 		small=$value
+	else
+		if [[ $value -lt $sec_small ]]
+		then
+			sec_small=$value
+		fi
 	fi
 done
 
