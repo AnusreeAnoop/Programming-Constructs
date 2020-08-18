@@ -4,4 +4,4 @@
 single_digit=$((RANDOM%10))
 
 #display variable
-echo $single_digit
+echo "num" $single_digit
