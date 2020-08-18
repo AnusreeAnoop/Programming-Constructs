@@ -9,12 +9,13 @@ for ((count=0;count<5;count++))
 do
 	num=$(( RANDOM%900+100 ))
 	echo $num
-	
+
 	#check wether the value is min or max store it
 	if [ $num -gt $max ]
 	then
 		max=$num
 	fi
+
 	if [ $num -lt $min ]
 	then
 		min=$num
