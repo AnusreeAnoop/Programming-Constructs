@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 #flip a coin and store value
 flip=$((RANDOM%2))
