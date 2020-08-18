@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 #read number
 read -p "Enter a single digit number" num
