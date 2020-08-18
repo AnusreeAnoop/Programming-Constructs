@@ -1,8 +1,12 @@
-#!/bin/bash -x
+#!/bin/bash
+#variables
 high=100
 low=0
 guess=1
 n=$(( $(($high+$low)) /2 ))
+
+echo "Think of a number between 1-100"
+
 
 while [[ $guess -gt 0 ]]
 do
@@ -18,14 +22,19 @@ do
 		echo "Is the number bigger than" $n "?(y/n)"
 		read ans
 
+
 		if [[ $ans -eq "y" ]]
 		then
 			low=$n
 			n=$(($(($high+$low))/2))
 
-		else
+
+		elif [[ $ans -eq "n" ]]
 			high=$n
 			n=$(($(($high+$low))/2))
+
+		else
+			echo "Invalid input"
 		fi
 
 	else
