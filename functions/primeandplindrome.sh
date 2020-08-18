@@ -12,6 +12,7 @@ function primecheck() {
 		fi
 	done
 }
+
 #function to check if number is a pallindrome
 function palindrome() {
 	rev=0
@@ -22,6 +23,7 @@ function palindrome() {
 		rev=$(( $rev*10+$remainder ))
 		num=$(( $num/10 ))
 	done
+
 	if [ $rev -eq $n ]
 	then
 		echo $n "is palindrome"
